@@ -1,0 +1,134 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The system is: Windows - 10.0.22631 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+      Build started 18/03/2024 00:38:16.
+      
+      Project "C:\\Users\\NextLegacy\\Documents\\Projects\\TI84PlusCE-T\\TiM\\build\\CMakeFiles\\3.28.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\NextLegacy\\Documents\\Projects\\TI84PlusCE-T\\TiM\\build\\CMakeFiles\\3.28.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\NextLegacy\\Documents\\Projects\\TI84PlusCE-T\\TiM\\build\\CMakeFiles\\3.28.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.45
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/build/CMakeFiles/3.28.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/build/CMakeFiles/CMakeScratch/TryCompile-0geg1s"
+      binary: "C:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/build/CMakeFiles/CMakeScratch/TryCompile-0geg1s"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/build/CMakeFiles/CMakeScratch/TryCompile-0geg1s'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_07751.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild version 17.8.3+195e7f5a3 for .NET Framework
+        Build started 18/03/2024 00:38:17.
+        
+        Project "C:\\Users\\NextLegacy\\Documents\\Projects\\TI84PlusCE-T\\TiM\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0geg1s\\cmTC_07751.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Creating directory "cmTC_07751.dir\\Debug\\".
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\NextLegacy\\Documents\\Projects\\TI84PlusCE-T\\TiM\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0geg1s\\Debug\\".
+          Creating directory "cmTC_07751.dir\\Debug\\cmTC_07751.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_07751.dir\\Debug\\cmTC_07751.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_07751.dir\\Debug\\cmTC_07751.tlog\\unsuccessfulbuild".
+        ComputeStdModulesCompileInputs:
+          Reading library manifest file 'C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\modules\\modules.json' which provides data for library 'microsoft/STL'.
+          Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\modules\\std.ixx' from library 'microsoft/STL' to be built with this project.
+          Adding module source 'C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\modules\\std.compat.ixx' from library 'microsoft/STL' to be built with this project.
+        MakeDirsForCl:
+          Creating directory "C:\\Users\\NextLegacy\\Documents\\Projects\\TI84PlusCE-T\\TiM\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0geg1s\\cmTC_07751.dir\\Debug\\microsoft\\STL".
+        SetModuleDependencies:
+          Creating directory "cmTC_07751.dir\\Debug\\cmTC_07751_MD.tlog\\".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++latest /Fo"cmTC_07751.dir\\Debug\\\\" /Fd"cmTC_07751.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33133 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          /std:c++latest is provided as a preview of language features from the latest C++
+          working draft, and we're eager to hear about bugs and suggestions for improvements.
+          However, note that these features are provided as-is without support, and subject
+          to changes or removal as the working draft evolves. See
+          https://go.microsoft.com/fwlink/?linkid=2045807 for details.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /std:c++latest /Fo"cmTC_07751.dir\\Debug\\\\" /Fd"cmTC_07751.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\NextLegacy\\Documents\\Projects\\TI84PlusCE-T\\TiM\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0geg1s\\Debug\\cmTC_07751.exe" /INCREMENTAL /ILK:"cmTC_07751.dir\\Debug\\cmTC_07751.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/build/CMakeFiles/CMakeScratch/TryCompile-0geg1s/Debug/cmTC_07751.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/build/CMakeFiles/CMakeScratch/TryCompile-0geg1s/Debug/cmTC_07751.lib" /MACHINE:X64  /machine:x64 cmTC_07751.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_07751.vcxproj -> C:\\Users\\NextLegacy\\Documents\\Projects\\TI84PlusCE-T\\TiM\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0geg1s\\Debug\\cmTC_07751.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_07751.dir\\Debug\\cmTC_07751.tlog\\unsuccessfulbuild".
+          Touching "cmTC_07751.dir\\Debug\\cmTC_07751.tlog\\cmTC_07751.lastbuildstate".
+        Done Building Project "C:\\Users\\NextLegacy\\Documents\\Projects\\TI84PlusCE-T\\TiM\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0geg1s\\cmTC_07751.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.32
+        
+      exitCode: 0
+...

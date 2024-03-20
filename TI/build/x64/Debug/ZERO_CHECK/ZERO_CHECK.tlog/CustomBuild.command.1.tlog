@@ -1,0 +1,10 @@
+^C:\USERS\NEXTLEGACY\DOCUMENTS\PROJECTS\TI84PLUSCE-T\TIM\TI\BUILD\CMAKEFILES\FFFA5A8B8FDAAD1A19B6C3F24A9D312C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/TI -BC:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/TI/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/TI/build/USB.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

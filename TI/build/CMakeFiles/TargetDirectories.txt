@@ -1,0 +1,3 @@
+C:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/TI/build/CMakeFiles/usb.dir
+C:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/TI/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/NextLegacy/Documents/Projects/TI84PlusCE-T/TiM/TI/build/CMakeFiles/ZERO_CHECK.dir
