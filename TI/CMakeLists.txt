@@ -16,7 +16,7 @@ FILE(GLOB_RECURSE USB_HEADERS "src/*.hpp" "src/*.h")
 
 message(STATUS "USB_SOURCES: ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/libusb/include/libusb.h")
 
-add_executable(usb ${USB_SOURCES} ${USB_HEADERS} ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/libusb/include/libusb.h)
+add_executable(usb WIN32 ${USB_SOURCES} ${USB_HEADERS} ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/libusb/include/libusb.h)
 
 target_link_libraries(usb PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/dependencies/libusb/static/libusb-1.0.lib BoilingHotWater::BoilingHotWater TeaCup::TeaCup)
 

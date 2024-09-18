@@ -2,6 +2,7 @@
 
 namespace TiM
 {
+    /*
     HBITMAP GetScreenBmp(HDC hdc, uint32_t width, uint32_t height)
     {
         // Get screen dimensions
@@ -29,9 +30,6 @@ namespace TiM
         x2  = width; //GetSystemMetrics(SM_CXSCREEN);
         y2  = height; //GetSystemMetrics(SM_CYSCREEN);
 
-        //std::cout << "x1: " << x1 << " y1: " << y1 << " x2: " << x2 << " y2: " << y2 << std::endl;
-//
-        //std::cout << "x1: " << x1 << " y1: " << y1 << " x2: " << x2 << " y2: " << y2 << std::endl;
         w   = x2 - x1;
         h   = y2 - y1;
 
@@ -73,5 +71,44 @@ namespace TiM
         DeleteObject(hBitmap);
 
         return pixels;
+    }
+    */
+
+    void GetPixelsFromScreen(uint32_t* pixels, uint32_t x1, uint32_t y1, uint32_t width, uint32_t height)
+    {
+
+        HDC hScreen = GetDC(NULL);
+        HDC hDC = CreateCompatibleDC(hScreen);
+        HBITMAP hBitmap = CreateCompatibleBitmap(hScreen, width, height);
+        HGDIOBJ old_obj = SelectObject(hDC, hBitmap);
+        BOOL bRet = BitBlt(hDC, 0, 0, width, height, hScreen, x1, y1, SRCCOPY);
+
+        if (!bRet)
+        {
+            //std::cout << "error" << std::endl;
+        }
+        else
+        {
+            BITMAPINFOHEADER bmi = {0};
+            bmi.biSize = sizeof(bmi);
+            bmi.biPlanes = 1;
+            bmi.biBitCount = 24;
+            bmi.biWidth = width;
+            bmi.biHeight = -height;
+            bmi.biCompression = BI_RGB;
+            bmi.biSizeImage = 0;
+            bmi.biXPelsPerMeter = 0;
+            bmi.biYPelsPerMeter = 0;
+            bmi.biClrUsed = 0;
+            bmi.biClrImportant = 0;
+
+            GetDIBits(hDC, hBitmap, 0, height, pixels, (BITMAPINFO*)&bmi, DIB_RGB_COLORS);
+        }
+
+        // clean up
+        SelectObject(hDC, old_obj);
+        DeleteDC(hDC);
+        ReleaseDC(NULL, hScreen);
+        DeleteObject(hBitmap);
     }
 }
